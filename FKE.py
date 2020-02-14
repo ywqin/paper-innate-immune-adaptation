@@ -137,6 +137,18 @@ Atemp=getAtemp(A0)
 
 #data output
 df = pd.DataFrame()
+df['alpha'] = [alpha]*(NX*NY)
+df['kappa'] = [kappa]*(NX*NY)
+df['True mean'] = [u2]*(NX*NY)
+df['True std'] = [sigma2]*(NX*NY)
+m  = [0]*(NX*NY)
+beta= [0]*(NX*NY)
+for i in range(NX):
+    for j in range(NY):
+        m[i*NY+j] = xmin+i*dx
+        beta[i*NY+j] = ymin+j*dy
+df['M']   = m
+df['Beta']= beta
 df['w0'] = w
 
 #main loop------------------------------------------------
@@ -150,5 +162,5 @@ for iteration in range(1,NumOfTimeSteps):
 	w = normalize(w)
 	#output----------------------------------------------------
 	if iteration%500==0:
-		df['w%d'%iteration] = w
+		df['weight@step#%d'%iteration] = w
 		df.to_csv('Fokker_planck_solution.csv.gz', index = None, header=True,compression='gzip')
