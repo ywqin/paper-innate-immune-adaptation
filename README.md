@@ -6,10 +6,8 @@ This repository contains data and scripts for reproducing the results accompanyi
 
 Yawei Qin<sup>1</sup>, Emily M. Mace<sup>2</sup>, and John P. Barton<sup>1,#</sup>
 
-<sup>1</sup> Department of Physics and Astronomy, University of California, Riverside, USA.   
-
-<sup>2</sup> Department of Pediatrics, Columbia University Irving Medical Center, New York, USA.   
-
+<sup>1</sup> Department of Physics and Astronomy, University of California, Riverside, USA.   \
+<sup>2</sup> Department of Pediatrics, Columbia University Irving Medical Center, New York, USA.   \
 <sup>#</sup> correspondence to [john.barton@ucr.edu](mailto:john.barton@ucr.edu) 
 
 # Contents
